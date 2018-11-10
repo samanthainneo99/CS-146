@@ -8,6 +8,8 @@ h1{
   color: navy;
   text-align: center;
   font-size: 36px;
+  font-family: 'Slabo 27px', serif;
+  font-weight: normal;
 }
 ul {
     list-style-type: none;
@@ -37,22 +39,47 @@ a{
   text-decoration: none;
 }
 .headlinks{
-  font-size: 20px;
+  font-size: 25px;
   display: inline;
   width: 100%;
+  align-content: center;
 }
 .sidelinks{
   width: 200px;
+  position: fixed;
+  height: 100%;
+}
+.logo{
+  width: 30px;
+  height: 30px;
+  float: right;
 }
 li a {
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
-}
 
+}
 /* Change the link color on hover */
 li a:hover {
     background-color: #3697DD;
     color: white;
+}
+.items{
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.col{
+  float: right;
+  width: 25%;
+  padding: 5px;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
