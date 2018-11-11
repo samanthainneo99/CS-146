@@ -49,11 +49,6 @@ a{
   position: fixed;
   height: 100%;
 }
-.logo{
-  width: 50px;
-  height: 50px;
-  float: right;
-}
 li a {
     display: block;
     color: #000;
@@ -63,7 +58,6 @@ li a {
 }
 /* Change the link color on hover */
 li a:hover {
-    background-color: #3697DD;
     color: white;
 }
 .items{
@@ -85,5 +79,57 @@ li a:hover {
   display: table;
   align-items: center;
 }
-p{
+@media only screen and (min-width: 999px){
+  .logo{
+    width: 50px;
+    height: 50px;
+    float: right;
+  }
+  ul {
+      height: 150px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 998px){
+  .logo{
+    width: 30px;
+    height: 30px;
+    float: right;
+  }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #3697DD;
+      border-top: 1px solid grey;
+      border-bottom: 1px;
+      height: 125px;
+  }
+  footer{
+    height: 50px;
+  }
+  .col{
+    width: 33.33%;
+    }
+}
+@media only screen and (max-width: 399px){
+  .logo{
+    width: 25px;
+    height: 25px;
+    float: right;
+  }
+  ul {
+      height: 100px;
+  }
+  .headlinks{
+    font-size: 16px;
+  }
+  .sidelinks{
+    width: 90px;
+  }
+  footer{
+    height: 50px;
+  }
+  .col{
+    width: 50%;
+    }
 }
