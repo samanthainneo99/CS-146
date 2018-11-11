@@ -1,0 +1,184 @@
+head {
+  display: flex;
+  background-color: #3697DD;
+  align-items: center;
+}
+
+h1{
+  color: navy;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Slabo 27px', serif;
+  font-weight: normal;
+}
+
+h2{
+  color: navy;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Slabo 27px', serif;
+  font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3697DD;
+    border-top: 1px solid grey;
+    border-bottom: 1px;
+    height: 150px;
+}
+
+li{
+  text-align: center;
+  border-bottom: 1px solid
+  padding: 20px;
+  color: grey;
+  display: inline;
+}
+
+footer{
+  display: flex;
+  height: 50px;
+  background-color: #3697DD;
+  align-items: center;
+  padding-top: 50px;
+}
+
+a{
+  padding: 15px;
+  color:navy;
+  text-decoration: none;
+}
+
+.headlinks{
+  font-size: 25px;
+  display: inline;
+  width: 100%;
+  align-content: center;
+}
+.sidelinks{
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  position: absolute;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+.ShopLeftLogo{
+  width: 140px;
+  height: 140px;
+  float: left;
+  padding: 5px;
+}
+
+.pictures{
+  height: 200px;
+  width: 350px;
+  padding: 20px;
+}
+
+.col{
+  float: right;
+  width: 25%;
+  padding: 30px;
+  align-items: center;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  align-items: center;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+
+}
+/* Change the link color on hover */
+li a:hover {
+    background-color: #3697DD;
+    color: white;
+}
+
+@media only screen and (min-width: 999px){
+  .logo{
+    width: 50px;
+    height: 50px;
+    float: right;
+  }
+  ul {
+      height: 150px;
+  }
+  .ShopLeftLogo{
+  	width: 140px;
+  	height: 140px;
+  	float: left;
+  	padding: 5px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 998px){
+  .logo{
+    width: 30px;
+    height: 30px;
+    float: right;
+  }
+  .ShopLeftLogo{
+  	width: 115px;
+  	height: 115px;
+  	float: left;
+  	padding: 5px;
+  }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #3697DD;
+      border-top: 1px solid grey;
+      border-bottom: 1px;
+      height: 125px;
+  }
+  footer{
+    height: 50px;
+  }
+  .col{
+    width: 33.33%;
+    }
+}
+@media only screen and (max-width: 399px){
+  .logo{
+    width: 25px;
+    height: 25px;
+    float: right;
+  }
+  .ShopLeftLogo{
+  	width: 75px;
+  	height: 75px;
+  	float: left;
+  	padding: 5px;
+  }
+  ul {
+      height: 100px;
+  }
+  .headlinks{
+    font-size: 16px;
+  }
+  .sidelinks{
+    width: 90px;
+  }
+  footer{
+    height: 50px;
+  }
+  .col{
+    width: 50%;
+    }
+}
