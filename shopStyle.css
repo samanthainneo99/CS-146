@@ -48,6 +48,7 @@ a{
   width: 200px;
   position: fixed;
   height: 100%;
+  position: absolute;
 }
 li a {
     display: block;
