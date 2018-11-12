@@ -50,6 +50,13 @@ a{
   height: 100%;
   position: absolute;
 }
+.ShopLeftLogo{
+  width: 140px;
+  height: 140px;
+  float: left;
+  padding: 5px;
+}
+
 li a {
     display: block;
     color: #000;
