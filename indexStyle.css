@@ -79,7 +79,7 @@ a{
 
 .pictures{
   height: 200px;
-  width: 350px;
+  width: 300px;
   padding: 20px;
 }
 
@@ -153,6 +153,22 @@ li a:hover {
   .col{
     width: 33.33%;
     }
+    .row{
+    	padding-left: 150px;
+    }
+   .pictures{
+   	height: 150px;
+   	width: 200px;
+   }
+   h1, h2{
+  	width: 75%;
+  	height: 75%;
+  	justify-content: right;
+  }
+  h1{
+  	padding-left: 170px;
+  }
+
 }
 @media only screen and (max-width: 399px){
   .logo{
@@ -169,6 +185,14 @@ li a:hover {
   ul {
       height: 100px;
   }
+  h1, h2{
+  	width: 50%;
+  	height: 50%;
+  	justify-content: right;
+  }
+  h1{
+  	padding-left: 135px;
+  }
   .headlinks{
     font-size: 16px;
   }
@@ -180,5 +204,9 @@ li a:hover {
   }
   .col{
     width: 50%;
-    }
+  }
+  .pictures{
+   	height: 100px;
+   	width: 125px;
+   }
 }
