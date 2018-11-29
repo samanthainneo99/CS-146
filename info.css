@@ -35,7 +35,7 @@ p2{
 }
 li{
   text-align: center;
-  border-bottom: 1px solid
+  border-bottom: 1px solid;
   padding: 20px;
   color: grey;
   display: inline;
