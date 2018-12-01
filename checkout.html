@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Shop</title>
-  <link rel="stylesheet" type="text/css" href="cartStyle.css">
+  <link rel="stylesheet" type="text/css" href="checkoutStyle.css">
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
   <div>
@@ -12,7 +12,7 @@
     <li><a href="shopHome.html" class="headlinks">Shop</a> </li>
     <li><a href="shopCoupon.html" class="headlinks">Coupons</a> </li>
     <li><a href="shopRecipe.html" class="headlinks">Recipes</a> </li>
-    <img src="images/cart.png" class="logo"  href="cart.html"></img>
+    <img src="images/cart.png" class="logo" href="cart.html"></img>
 </ul>
 </div>
 </head>
@@ -32,8 +32,10 @@
   <div class="row">
   <div class="col-75">
     <div class="container">
+      <h1>Your Total:</h1>
+      <label for="promo" class="promo"></i> Promo Code: </label>
+      <input type="text" class="promo" id="promo" name="promo">
       <form action="/action_page.php">
-
         <div class="row">
           <div class="col-50">
             <h3>Billing and Shipping Address</h3>
@@ -80,18 +82,18 @@
               </div>
               <div class="col-50">
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
+                <input type="text" id="cvv" name="cvv" placeholder="123">
               </div>
             </div>
           </div>
         </div>
-        <input type="submit" value="Pay Now" class="btn">
+        <input type="submit" value="Pay Now" class="button1">
       </form>
     </div>
   </div>
-<footer>
-  <a href="shopAboutUs"> About Us</a>
-  <a href="shopContactUs"> Contact Us</a>
+  <footer>
+    <a href="shopAboutUs"> About Us</a>
+    <a href="shopContactUs"> Contact Us</a>
   </footer>
 </body>
 </html>
