@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to ShopLeft!</title>
+  <link rel="stylesheet" type="text/css" href="cart.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+    <div>
+    <ul>
+      <img src="images/cart.png" class="logo"></img>
+      <li><a href="index.html" class="headlinks"> Home</a> </li>
+      <li><a href="shopHome.html" class="headlinks"> Shop</a> </li>
+      <li><a href="shopCoupon.html" class="headlinks">Coupons</a> </li>
+      <li><a href="shopRecipe.html" class="headlinks">Recipes</a> </li>
+      <img src="images/ShopLeft.png" class="ShopLeftLogo">
+  </ul>
+</div>
+</head>
+<body>
+  <div  class="sidelinks">
+    <ul class="sidelinks">
+      <li><a href="shopProduce.html" >Produce</a></li>
+      <li><a href="shopBakery.html" >Bakery</a></li>
+      <li><a href="shopBeverages.html" >Beverages</a></li>
+      <li><a href="shopMeatSeafood.html" >Meat and Seafood</a></li>
+      <li><a href="shopDairy.html" >Dairy</a></li>
+      <li><a href="shopFrozen.html">Frozen</a></li>
+      <li><a href="shopPersonalCare.html" >Personal Care</a></li>
+      <li><a href="shopPets.html" >Pets</a></li>
+    </ul>
+  </div>
+  <div>
+      <h1>Shopping Cart</h1>
+    </div>
+  <div id="page">
+      <table id="cart">
+        <thead>
+          <tr>
+            <th class="first">Photo</th>
+            <th class="second">Qty</th>
+            <th class="third">Product</th>
+            <th class="fourth">Line Total</th>
+            <th class="fifth">&nbsp;</th>
+          </tr>
+        </thead>
+        <thead>
+          <p> Product 1</p>
+        </thead>
+      <!-- tax + subtotal -->
+  <tr class="extracosts">
+    <td class="light">Shipping & Tax</td>
+    <td colspan="2" class="light"></td>
+    <td>$35.00</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr class="totalprice">
+    <td class="light">Total:</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2"><span class="thick">$225.45</span></td>
+  </tr>
+  
+  <!-- checkout btn -->
+  <tr class="checkoutrow">
+    <td colspan="5" class="checkout"><button id="submitbtn">Checkout Now!</button></td>
+  </tr>
+</tbody>
+      </table>
+
+  </div>
+</body>
+</html>
