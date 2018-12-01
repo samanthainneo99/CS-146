@@ -4,9 +4,8 @@ head {
   align-items: center;
 }
 h1{
-  color: navy;
-  text-align: center;
-  font-size: 36px;
+  font-size: 20px;
+  margin-left: 10px;
   font-family: 'Slabo 27px', serif;
   font-weight: normal;
 }
@@ -52,8 +51,11 @@ a{
 .sidelinks{
   width: 200px;
   position: fixed;
-  height: 800px;
+  height: 1350px;
   position: absolute;
+}
+.promo{
+  margin-left: 10px;
 }
 li a {
     display: block;
@@ -157,25 +159,22 @@ li a:hover {
 }
 
 .row {
-  display: -ms-flexbox; /* IE10 */
+  display: flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   margin: 0 -16px;
 }
 
 .col-25 {
-  -ms-flex: 25%; /* IE10 */
   flex: 25%;
 }
 
 .col-50 {
-  -ms-flex: 50%; /* IE10 */
   flex: 50%;
 }
 
 .col-75 {
-  -ms-flex: 75%; /* IE10 */
   flex: 75%;
 }
 
@@ -188,8 +187,6 @@ li a:hover {
 
 .container {
   padding: 10px 10px 10px 10px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
 }
 
 input[type=text] {
@@ -204,34 +201,30 @@ label {
   margin-bottom: 10px;
   display: block;
 }
-
 .icon-container {
   margin-bottom: 20px;
   padding: 7px 0;
   font-size: 24px;
 }
-
-.btn {
+.button1 {
   background-color: #4CAF50;
   color: white;
   padding: 12px;
-  margin: 10px 0;
+  margin: 10px 90px 10px 0px;
   border: none;
-  width: 100%;
+  width: 90%;
+  float: right;
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
 }
-
-.btn:hover {
+.button1:hover {
   background-color: #45a049;
 }
-
 span.price {
   float: right;
   color: grey;
 }
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .row {
