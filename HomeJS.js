@@ -98,7 +98,7 @@ document.getElementById("frozen").addEvenetListener("click",()=>create_page("fro
 document.getElementById("care").addEvenetListener("click",()=>create_page("care"));
 document.getElementById("pet").addEvenetListener("click",()=>create_page("pet"));
 
-
+//produce
 function my_function_grape() {
   total += items["produce"]["grapes"];
   console.log(total);
@@ -147,7 +147,255 @@ function my_function_potatoes() {
   append_item(items["produce"]["Fplatter"]);
   document.getElementById("total").innerHTML = "$" + total;
 }
+//beverages
+function my_function_applejuice() {
+  total += items["beverages"]["applejuice"];
+  console.log(total);
+  append_item(items["beverages"]["applejuice"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_orangejuice() {
+  total += items["beverages"]["orangejuice"];
+  console.log(total);
+  append_item(items["beverages"]["orangejuice"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_skimmilk() {
+  total += items["beverages"]["skimmilk"];
+  console.log(total);
+  append_item(items["beverages"]["skimmilk"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_lemonade() {
+  total += items["beverages"]["lemonade"];
+  console.log(total);
+  append_item(items["beverages"]["lemonade"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_almondmilk() {
+  total += items["beverages"]["almondmilk"];
+  console.log(total);
+  append_item(items["beverages"]["almondmilk"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_2milk() {
+  total += items["beverages"]["2milk"];
+  console.log(total);
+  append_item(items["beverages"]["2milk"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_sprite() {
+  total += items["beverages"]["sprite"];
+  console.log(total);
+  append_item(items["beverages"]["sprite"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_Coke() {
+  total += items["beverages"]["Coke"];
+  console.log(total);
+  append_item(items["beverages"]["Coke"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_water() {
+  total += items["beverages"]["water"];
+  console.log(total);
+  append_item(items["beverages"]["water"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
 
+//meat and seafood
+function my_function_clam() {
+  total += items["meatseafood"]["clam"];
+  console.log(total);
+  append_item(items["meatseafood"]["clam"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_lobster() {
+  total += items["meatseafood"]["lobster"];
+  console.log(total);
+  append_item(items["meatseafood"]["lobster"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_salmon() {
+  total += items["meatseafood"]["salmon"];
+  console.log(total);
+  append_item(items["meatseafood"]["salmon"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_shrimp() {
+  total += items["meatseafood"]["shrimp"];
+  console.log(total);
+  append_item(items["meatseafood"]["shrimp"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_turkey() {
+  total += items["meatseafood"]["turkey"];
+  console.log(total);
+  append_item(items["meatseafood"]["turkey"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_chicken() {
+  total += items["meatseafood"]["chicken"];
+  console.log(total);
+  append_item(items["meatseafood"]["chicken"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_steak() {
+  total += items["meatseafood"]["steak"];
+  console.log(total);
+  append_item(items["meatseafood"]["steak"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_ham() {
+  total += items["meatseafood"]["ham"];
+  console.log(total);
+  append_item(items["meatseafood"]["ham"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_veal() {
+  total += items["meatseafood"]["veal"];
+  console.log(total);
+  append_item(items["meatseafood"]["veal"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+
+//dairy
+function my_function_almondmilk() {
+  total += items["Dairy"]["Dalmondmilk"];
+  console.log(total);
+  append_item(items["Dairy"]["Dalmondmilk"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_organicwhole() {
+  total += items["Dairy"]["organicwhole"];
+  console.log(total);
+  append_item(items["Dairy"]["organicwhole"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_mozzarella() {
+  total += items["Dairy"]["mozzarella"];
+  console.log(total);
+  append_item(items["Dairy"]["mozzarella"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_cheddar() {
+  total += items["Dairy"]["cheddar"];
+  console.log(total);
+  append_item(items["Dairy"]["cheddar"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_stringcheese() {
+  total += items["Dairy"]["stringcheese"];
+  console.log(total);
+  append_item(items["Dairy"]["stringcheese"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_plaingreek() {
+  total += items["Dairy"]["plaingreek"];
+  console.log(total);
+  append_item(items["Dairy"]["plaingreek"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_plainyogurt() {
+  total += items["Dairy"]["plainyogurt"];
+  console.log(total);
+  append_item(items["Dairy"]["plainyogurt"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_eggs() {
+  total += items["Dairy"]["eggs"];
+  console.log(total);
+  append_item(items["Dairy"]["eggs"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_strawberrygreek() {
+  total += items["Dairy"]["strawberrygreek"];
+  console.log(total);
+  append_item(items["Dairy"]["strawberrygreek"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+
+//personal care
+function my_function_toothpaste() {
+  total += items["personalcare"]["toothpaste"];
+  console.log(total);
+  append_item(items["personalcare"]["toothpaste"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_toothbrush() {
+  total += items["personalcare"]["toothbrush"];
+  console.log(total);
+  append_item(items["personalcare"]["toothbrush"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_pommade() {
+  total += items["personalcare"]["pommade"];
+  console.log(total);
+  append_item(items["personalcare"]["pommade"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_hairdryer() {
+  total += items["personalcare"]["hairdryer"];
+  console.log(total);
+  append_item(items["personalcare"]["hairdryer"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_moisturizer() {
+  total += items["personalcare"]["moisturizer"];
+  console.log(total);
+  append_item(items["personalcare"]["moisturizer"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_shampoo() {
+  total += items["personalcare"]["shampoo"];
+  console.log(total);
+  append_item(items["personalcare"]["shampoo"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_perfume() {
+  total += items["personalcare"]["perfume"];
+  console.log(total);
+  append_item(items["personalcare"]["perfume"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_conditioner() {
+  total += items["personalcare"]["conditioner"];
+  console.log(total);
+  append_item(items["personalcare"]["conditioner"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_deodorant() {
+  total += items["personalcare"]["deodorant"];
+  console.log(total);
+  append_item(items["personalcare"]["deodorant"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+
+//pets
+function my_function_hamsterwheel() {
+  total += items["pets"]["hamsterwheel"];
+  console.log(total);
+  append_item(items["pets"]["hamsterwheel"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_brush() {
+  total += items["pets"]["brush"];
+  console.log(total);
+  append_item(items["pets"]["brush"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_cattoy() {
+  total += items["pets"]["cattoy"];
+  console.log(total);
+  append_item(items["pets"]["cattoy"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_fishfood() {
+  total += items["pets"]["fishfood"];
+  console.log(total);
+  append_item(items["pets"]["fishfood"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_catfood() {
+  total += items["pets"]["catfood"];
+  console.log(total);
+  append_item(items["pets"]["catfood"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_dogfood() {
+  total += items["pets"]["dogfood"];
+  console.log(total);
+  append_item(items["pets"]["dogfood"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_dogtreats() {
+  total += items["pets"]["dogtreats"];
+  console.log(total);
+  append_item(items["pets"]["dogtreats"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_flea() {
+  total += items["pets"]["flea"];
+  console.log(total);
+  append_item(items["pets"]["flea"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_animalshampoo() {
+  total += items["pets"]["animalshampoo"];
+  console.log(total);
+  append_item(items["pets"]["animalshampoo"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
 
 function append_item(item_price) {
   item_list = document.getElementById("items");
