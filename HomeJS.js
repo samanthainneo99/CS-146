@@ -439,6 +439,103 @@ function append_item(item_price) {
   elem.innerHTML = "$" + item_price;
   item_list.appendChild(elem);
 }
+function my_function_donuts() {
+  total += items["bakery"]["donuts"];
+  console.log(total);
+  append_item(items["bakery"]["donuts"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_muffin() {
+  total += items["bakery"]["muffin"];
+  console.log(total);
+  append_item(items["bakery"]["muffin"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_wonderbread() {
+  total += items["bakery"]["wonderbread"];
+  console.log(total);
+  append_item(items["bakery"]["wonderbread"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_cookies() {
+  total += items["bakery"]["cookies"];
+  console.log(total);
+  append_item(items["bakery"]["cookies"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_englishmuffins() {
+  total += items["bakery"]["englishmuffins"];
+  console.log(total);
+  append_item(items["bakery"]["englishmuffins"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_tortillas() {
+  total += items["bakery"]["tortillas"];
+  console.log(total);
+  append_item(items["bakery"]["tortillas"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_ciabatta() {
+  total += items["bakery"]["ciabatta"];
+  console.log(total);
+  append_item(items["bakery"]["ciabatta"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_croissant() {
+  total += items["bakery"]["croissant"];
+  console.log(total);
+  append_item(items["bakery"]["croissant"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_chocolatecake() {
+  total += items["bakery"]["chocolatecake"];
+  console.log(total);
+  append_item(items["bakery"]["chocolatecake"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_leancuisine() {
+  total += items["frozen"]["leancuisine"];
+  console.log(total);
+  append_item(items["frozen"]["leancuisine"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_jimmydean() {
+  total += items["frozen"]["jimmydean"];
+  console.log(total);
+  append_item(items["frozen"]["jimmydean"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+function my_function_hotpockets() {
+  total += items["frozen"]["hotpockets"];
+  console.log(total);
+  append_item(items["frozen"]["hotpockets"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_peperonipizza() {
+  total += items["frozen"]["peperonipizza"];
+  console.log(total);
+  append_item(items["frozen"]["peperonipizza"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_mixedveggies() {
+  total += items["frozen"]["mixedveggies"];
+  console.log(total);
+  append_item(items["frozen"]["mixedveggies"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_vanilla() {
+  total += items["frozen"]["vanilla"];
+  console.log(total);
+  append_item(items["frozen"]["vanilla"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_pizzarolls() {
+  total += items["frozen"]["pizzarolls"];
+  console.log(total);
+  append_item(items["frozen"]["pizzarolls"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_almondbar() {
+  total += items["frozen"]["almondbar"];
+  console.log(total);
+  append_item(items["frozen"]["almondbar"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}function my_function_popsicle() {
+  total += items["frozen"]["popsicle"];
+  console.log(total);
+  append_item(items["frozen"]["popsicle"]);
+  document.getElementById("total").innerHTML = "$" + total;
+}
+
 
 function clear_cart() {
   p1 = document.createElement("p");
