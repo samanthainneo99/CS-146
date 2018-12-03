@@ -89,14 +89,14 @@ var items = {
     "animalshampoo":29.00
   }
 }
-console.log(document.getElementById("produce")[0].addEvenetListener("click",()=>create_page("produce")));
-document.getElementById("bakery").addEvenetListener("click",()=>create_page("bakery"));
-document.getElementById("meat").addEvenetListener("click",()=>create_page("meat"));
-document.getElementById("beverages").addEvenetListener("click",()=>create_page("beverages"));
-document.getElementById("dairy").addEvenetListener("click",()=>create_page("dairy"));
-document.getElementById("frozen").addEvenetListener("click",()=>create_page("frozen"));
-document.getElementById("care").addEvenetListener("click",()=>create_page("care"));
-document.getElementById("pet").addEvenetListener("click",()=>create_page("pet"));
+console.log(document.getElementById("produce")[0].addEventListener("click",()=>create_page("produce")));
+document.getElementById("bakery").addEventListener("click",()=>create_page("bakery"));
+document.getElementById("meat").addEventListener("click",()=>create_page("meat"));
+document.getElementById("beverages").addEventListener("click",()=>create_page("beverages"));
+document.getElementById("dairy").addEventListener("click",()=>create_page("dairy"));
+document.getElementById("frozen").addEventListener("click",()=>create_page("frozen"));
+document.getElementById("care").addEventListener("click",()=>create_page("care"));
+document.getElementById("pet").addEventListener("click",()=>create_page("pet"));
 
 //produce
 function my_function_grape() {
