@@ -1,0 +1,28 @@
+#all_navs {
+  display: flex;
+  flex-direction: column;
+}
+#nav1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-color: #3697DD;
+}
+#nav1 a {
+  padding-left: 20px;
+}
+#nav2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #3697DD;
+}
+#nav2 a {
+  padding-top: 20px;
+  width: 150px
+}
+#logo {
+  width: auto;
+  height: 100px;
+  background-color: #3697DD;
+
+}
