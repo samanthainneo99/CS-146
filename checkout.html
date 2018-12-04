@@ -9,22 +9,25 @@
 <body>
   <div>
     <nav id="nav1">
-        <img src="images/ShopLeft.jpg" id="logo"> </img>
+        <img src="images/ShopLeftLogo.png" id="logo"> </img>
         <a href="newHome.html" class="headlinks">Home</a>
-        <a href="newShop.html" class="headlinks">Shop</a>
+        <a href="newShope.html" class="headlinks">Shop</a>
         <a href="shopCoupon.html" class="headlinks">Coupons</a>
         <a href="shopRecipe.html" class="headlinks">Recipes</a>
         <a href="shopAboutUs.html" class="headlinks">About Us</a>
         <a href="shopContactUs.html" class="headlinks">Contact Us</a>
-        <a href="checkout.html" ><img src="images/cart.png" id="cart"></img></a>
+        <a href="checkout.html" ><img src="images/cart.png" id="cart"> </img></a>
       </nav>
   <div class="row">
   <div class="col-75">
     <div class="container">
       <h1>Your Total:</h1>
       <button id="totalbutton">Click for your total </button>
-      <label for="promo" class="promo"></i> Promo Code: </label>
-      <input type="text" class="promo" id="promo" name="promo">
+      <p>Select a Promo Code: </p>
+      <select id="promo_code">
+        <option value="5"> WELCOME</option>
+        <option value=".75"> 5off25dec18</option>
+      </select>
       <form action="/action_page.php">
         <div class="row">
           <div class="col-50">
@@ -76,7 +79,6 @@
                 <option value="2028"> 2028</option>
 
               </select>
-                <!-- <input type="text" id="expyear" name="expyear" placeholder="2018"> -->
               </div>
               <div class="col-50">
                 <label for="cvv">CVV</label>
@@ -85,8 +87,8 @@
             </div>
           </div>
         </div>
-        <input type="submit" value="Pay Now" class="button1">
       </form>
+      <a href="./newShop.html"><button class="button1"> Pay Now </button></a>
     </div>
   </div>
 </body>
