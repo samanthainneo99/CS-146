@@ -1,10 +1,10 @@
 body {
-  height: 350vh;
+  height: 300vh;
   background-color: #b8e3f2;
 }
 
 #all_navs {
-  display: flex;
+  display: flex; 
   flex-direction: column;
 }
 #nav1 {
@@ -26,7 +26,8 @@ body {
 }
 #nav2 a {
   padding-top: 20px;
-  width: 150px
+  width: 150px;
+
 }
 #content{
   width:100%;
@@ -45,35 +46,15 @@ body {
 }
 #div{
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
   align-items:center;
-}
-#cart{
-  padding-left: 450px;
-  width: 50px;
-}
-#itemPic{
-  height: 100px;
-}
-.picStyle{
-  max-width: 200px;
-  min-width: 200px;
-  max-height: 200px;
-  min-height: 200px;
-  justify-content: space-evenly;
-}
-#divStyle{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  float: left;
 }
 .pictures{
   max-height: 500px;
   max-width: 500px;
-  padding: 20;
+  padding: 20px;
 }
+
 #cartPic{
 	max-height: 50px;
 	max-width: 50px;
@@ -114,4 +95,102 @@ body {
 }
 h1,h2{
 	text-align: center;
+}
+
+@media only screen and (max-width: 399px){
+  #logo{
+    width: 68px;
+    height: 68px;
+  }
+  #nav1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-color: #3697DD;
+  padding-left: 5px;
+  padding-top: 5px;
+	}
+#nav1 a {
+  padding-left: 3px;
+}
+  .pictures{
+  	min-height: 100px;
+   	min-width: 100px;
+   	max-height: 100px;
+   	max-width: 100px;
+   }
+   #nav2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #3697DD;
+  height: 100%;
+}
+#nav2 a {
+  padding-top: 10px;
+  width: 75px;
+
+}
+.headlinks{
+    font-size: 16px;
+  }
+  .sidelinks{
+    width: 90px;
+  }
+  #cartPic{
+	max-height: 30px;
+	max-width: 30px;
+	padding-left:775px;
+}
+img{
+	height: 50px;
+	width: 50px;
+}
+}
+@media only screen and (min-width: 400px) and (max-width: 998px){
+	.logo{
+    width: 30px;
+    height: 30px;
+    float: right;
+  }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #3697DD;
+      border-top: 1px solid grey;
+      border-bottom: 1px;
+      height: 125px;
+  }
+  footer{
+    height: 50px;
+  }
+  .col{
+    width: 33.33%;
+    }
+    img{
+      height: 100px;
+      width: 100px;
+    }
+}
+@media only screen and (min-width: 999px){
+	.logo{
+    width: 25px;
+    height: 25px;
+    float: right;
+  }
+  ul {
+      height: 100px;
+  }
+  .headlinks{
+    font-size: 16px;
+  }
+  .sidelinks{
+    width: 90px;
+  }
+  footer{
+    height: 50px;
+  }
+  .col{
+    width: 50%;
+    }
 }
