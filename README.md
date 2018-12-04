@@ -6,3 +6,4 @@
 # JAVASCRIPT
 # Buttons for : add to cart, pay now, checkout
 # Math for: multiple items, calculatinf promo codes, tax, shipping
+https://www.taniarascia.com/how-to-use-local-storage-with-javascript/ 
