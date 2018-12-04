@@ -3,7 +3,7 @@ body {
 }
 
 #all_navs {
-  display: flex; 
+  display: flex;
   flex-direction: column;
 }
 #nav1 {
@@ -43,4 +43,18 @@ body {
   display:flex;
   flex-direction:row;
   align-items:center;
+}
+#cart{
+  padding-left: 450px;
+  width: 50px;
+}
+#itemPic{
+  height: 100px;
+}
+.picStyle{
+  width: 25%;
+  height: 25%;
+}
+.picStyle{
+  flex-direction: row;
 }
