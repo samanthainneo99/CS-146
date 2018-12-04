@@ -52,9 +52,13 @@ body {
   height: 100px;
 }
 .picStyle{
-  width: 25%;
-  height: 25%;
+  max-width: 200px;
+  max-height: 200px;
 }
-.picStyle{
-  flex-direction: row;
+#divStyle{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  float: left;
 }
