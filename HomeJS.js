@@ -577,8 +577,9 @@ function create_page(type_of_page) {
     btn.addEventListener('click', () => setPrice(parseFloat(localStorage.getItem('price')) + page_dictionary[list_of_items[i]]))
     parent.appendChild(btn);
     
-    pic.className="picStyle";
+     pic.className="picStyle";
     parent.id="divStyle";
+    var change = document.getElementsByTagName("div");
     itemlist.appendChild(parent);
 
     itemlist.appendChild(parent);
