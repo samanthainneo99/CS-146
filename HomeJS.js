@@ -433,6 +433,13 @@ function my_function_animalshampoo() {
   append_item(items["pets"]["animalshampoo"]);
   document.getElementById("total").innerHTML = "$" + total;
 }
+
+function append_item(item_price) {
+  item_list = document.getElementById("items");
+  elem = document.createElement("p");
+  elem.innerHTML = "$" + item_price;
+  item_list.appendChild(elem);
+}
 function my_function_donuts() {
   total += items["bakery"]["donuts"];
   console.log(total);
@@ -550,24 +557,24 @@ function clear_cart() {
 }
 
 function create_page(type_of_page) {
-  let itemlist = document.getElementById('itemlist');
+  let itemlist = document.getElementById('itemlist')
   itemlist.innerHTML = "";
-  console.log('attempting to create page...');
+  console.log('attempting to create page...')
   page_dictionary = items[type_of_page];
-  console.log('PD:', page_dictionary);
+  console.log('PD:', page_dictionary)
   list_of_items = Object.keys(page_dictionary);
   console.log('Item List:', list_of_items);
   for(let i = 0; i < list_of_items.length; i++) {
     var parent = document.createElement("div");
     pic = document.createElement("img");
     pic.src = "images/"+type_of_page+"/"+list_of_items[i]+".jpg";
-    parent.appendChild(pic);
+    parent.appendChild(pic)
     par = document.createElement("p");
     par.innerText = list_of_items[i];
     parent.appendChild(par);
     btn = document.createElement("button");
     btn.innerHTML = page_dictionary[list_of_items[i]];
-    btn.addEventListener('click', () => setPrice(parseFloat(localStorage.getItem('price')) + page_dictionary[list_of_items[i]]));
+    btn.addEventListener('click', () => setPrice(parseFloat(localStorage.getItem('price')) + page_dictionary[list_of_items[i]]))
     parent.appendChild(btn);
 
     pic.className="picStyle";
@@ -580,13 +587,9 @@ function create_page(type_of_page) {
 }
 
 function setPrice(newPrice){
-  localStorage.setItem('price', newPrice);
+  localStorage.setItem('price', newPrice)
 }
 
 function getPrice() {
-  return '$' + localStorage.getItem('price');
-}
-
-function set_tax_price(newPrice){
-  return newPrice = (newPrice * tax) + (newPrice);
+  return '$' + localStorage.getItem('price')
 }
