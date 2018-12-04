@@ -576,11 +576,12 @@ function create_page(type_of_page) {
     btn.innerHTML = page_dictionary[list_of_items[i]];
     btn.addEventListener('click', () => setPrice(parseFloat(localStorage.getItem('price')) + page_dictionary[list_of_items[i]]))
     parent.appendChild(btn);
+    
+    pic.className="picStyle";
+    parent.id="divStyle";
+    itemlist.appendChild(parent);
 
     itemlist.appendChild(parent);
-    // butn =  document.createElement("button");
-    // butn.innerHTML = "Price";
-    // for each page_dictionary[list_of_items[i]], create an item for your div, and insert
   }
 }
 
