@@ -46,12 +46,29 @@ body {
 }
 #div{
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   align-items:center;
+}
+#cart{
+  padding-left: 450px;
+  width: 50px;
+}
+#itemPic{
+  height: 100px;
+}
+.picStyle{
+  max-width: 200px;
+  max-height: 200px;
+}
+#divStyle{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  float: left;
 }
 .pictures{
   max-height: 500px;
   max-width: 500px;
   padding: 20;
 }
-
