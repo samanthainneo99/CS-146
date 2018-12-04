@@ -74,3 +74,44 @@ body {
   max-width: 500px;
   padding: 20;
 }
+#cartPic{
+	max-height: 50px;
+	max-width: 50px;
+	padding-left:775px;
+}
+#recipes img {
+  display: flex;
+  align-self: center;
+  height: 10%;
+  width: 25%;
+  box-shadow: 0px 0px 4px black;
+  border-radius: 4px;
+  padding: 16px;
+}
+#recipes {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  margin: 10px;
+}
+#coupons img {
+  display: flex;
+  align-self: center;
+  height: auto;
+  width: 50%;
+  box-shadow: 0px 0px 4px black;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+#coupons {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  padding: 10px;
+}
+h1,h2{
+	text-align: center;
+}
