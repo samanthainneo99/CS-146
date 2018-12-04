@@ -24,7 +24,7 @@ console.log(hello);
 var tax = .07;
 var shippping = 10.00;
 var quantity = 0;
-var price = 1.99;
+var price = localStorage.getItem('price'  );
 var subtotal = 0;
 var total = 0;
 window.onload= () => {
@@ -39,18 +39,16 @@ var f = document.getElementById("promo_code");
 var strUser = f.options[f.selectedIndex].text;
 
 function getpromoprice(f){
+  console.log ( newprice );
   f = document.getElementById("promo_code").value;
   if (f.innerText === 'WELCOME'){
-    price = 'newprice' - 'value';
-    return price;
+    price = newprice - f;
   }
   else if (f === '5off25dec18'){
-    price = 'newprice' * 'value';
-    return price;
+    price = newprice * f;
   }
-  else {
-    return price;
-  }
+  console.log ( price );
+  setPrice(price);
 }
 function set_tax_price(newPrice){
   return newPrice = (newPrice * tax) + (newPrice);
