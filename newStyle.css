@@ -54,7 +54,12 @@ body {
   max-width: 500px;
   padding: 20px;
 }
-
+.headlinks{
+  font-size: 25px;
+  display: inline;
+  width: 100%;
+  align-content: center;
+}
 #cartPic{
 	max-height: 50px;
 	max-width: 50px;
