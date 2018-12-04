@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shop</title>
+  <title>Checkout</title>
   <script type="text/javascript" src="checkout.js"></script>
   <link rel="stylesheet" type="text/css" href="checkoutStyle.css">
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
@@ -34,6 +34,7 @@
   <div class="col-75">
     <div class="container">
       <h1>Your Total:</h1>
+      <button id="totalbutton">Click for your total </button>
       <label for="promo" class="promo"></i> Promo Code: </label>
       <input type="text" class="promo" id="promo" name="promo">
       <form action="/action_page.php">
@@ -43,9 +44,9 @@
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
             <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <input type="email" id="email" name="email" placeholder="john@example.com">
             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="1234 Main Street">
+            <textarea type="textarea" id="adr" name="address" placeholder="1234 Main Street"></textarea>
             <label for="city"><i class="fa fa-institution"></i> City</label>
             <input type="text" id="city" name="city" placeholder="New York">
 
@@ -63,12 +64,6 @@
 
           <div class="col-50">
             <h3>Payment</h3>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
             <label for="cname">Name on Card</label>
             <input type="text" id="cname" name="cardname" placeholder="John More Doe">
             <label for="ccnum">Credit card number</label>
@@ -79,7 +74,21 @@
             <div class="row">
               <div class="col-50">
                 <label for="expyear">Experation Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                <select>
+                  <option value="2018"> 2018</option>
+                <option value="2019"> 2019</option>
+                <option value="2020"> 2020</option>
+                <option value="2021"> 2021</option>
+                <option value="2022"> 2022</option>
+                <option value="2023"> 2023</option>
+                <option value="2024"> 2024</option>
+                <option value="2025"> 2025</option>
+                <option value="2026"> 2026</option>
+                <option value="2027"> 2027</option>
+                <option value="2028"> 2028</option>
+
+              </select>
+                <!-- <input type="text" id="expyear" name="expyear" placeholder="2018"> -->
               </div>
               <div class="col-50">
                 <label for="cvv">CVV</label>
