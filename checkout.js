@@ -1,6 +1,9 @@
 var parent1 = document.createElement("div");
 para = document.createElement("p");
 para.innerText = "Your Total: "  +(localStorage.getItem('price'));
+if ( localStorage.getItem('price') == NaN) {
+  setPrice(0);
+}
 console.log(localStorage.getItem('price'));
 para.addEventListener('click', () => setPrice(parseFloat(localStorage.getItem('price')) + page_dictionary[list_of_items[i]]));
 console.log(para);
@@ -24,15 +27,19 @@ var quantity = 0;
 var price = 1.99;
 var subtotal = 0;
 var total = 0;
+window.onload= () => {
+  var e = document.getElementById("promo_code");
+  console.log ( e );
+  e.addEventListener('change', getpromoprice);
 
-var e = document.getElementById("promo_code");
-e.addEventListener('select', getpromoprice(e));
+  var strUser = e.options[e.selectedIndex].value;
+};
 
-var strUser = e.options[e.selectedIndex].value;
-var f = document.getElementById("promo_code").innerTexT;
+var f = document.getElementById("promo_code");
 var strUser = f.options[f.selectedIndex].text;
 
 function getpromoprice(f){
+  f = document.getElementById("promo_code").value;
   if (f.innerText === 'WELCOME'){
     price = 'newprice' - 'value';
     return price;
