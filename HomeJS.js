@@ -91,12 +91,13 @@ var items = {
 }
 document.getElementById("produce").addEventListener("click",()=>create_page("produce"));
 document.getElementById("bakery").addEventListener("click",()=>create_page("bakery"));
-document.getElementById("meat").addEventListener("click",()=>create_page("meat"));
+document.getElementById("meatseafood").addEventListener("click",()=>create_page("meatseafood"));
 document.getElementById("beverages").addEventListener("click",()=>create_page("beverages"));
-document.getElementById("dairy").addEventListener("click",()=>create_page("dairy"));
+document.getElementById("Dairy").addEventListener("click",()=>create_page("Dairy"));
 document.getElementById("frozen").addEventListener("click",()=>create_page("frozen"));
-document.getElementById("care").addEventListener("click",()=>create_page("care"));
-document.getElementById("pet").addEventListener("click",()=>create_page("pet"));
+document.getElementById("personalcare").addEventListener("click",()=>create_page("personalcare"));
+document.getElementById("pets").addEventListener("click",()=>create_page("pets"));
+
 
 //produce
 function my_function_grape() {
