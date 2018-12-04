@@ -89,7 +89,7 @@ var items = {
     "animalshampoo":29.00
   }
 }
-console.log(document.getElementById("produce")[0].addEventListener("click",()=>create_page("produce")));
+document.getElementById("produce").addEventListener("click",()=>create_page("produce"));
 document.getElementById("bakery").addEventListener("click",()=>create_page("bakery"));
 document.getElementById("meat").addEventListener("click",()=>create_page("meat"));
 document.getElementById("beverages").addEventListener("click",()=>create_page("beverages"));
@@ -536,6 +536,12 @@ function my_function_hotpockets() {
   document.getElementById("total").innerHTML = "$" + total;
 }
 
+function append_item(item_price) {
+  item_list = document.getElementById("items");
+  elem = document.createElement("p");
+  elem.innerHTML = "$" + item_price;
+  item_list.appendChild(elem);
+}
 
 function clear_cart() {
   p1 = document.createElement("p");
@@ -550,17 +556,37 @@ function clear_cart() {
 }
 
 function create_page(type_of_page) {
+  let itemlist = document.getElementById('itemlist')
+  itemlist.innerHTML = "";
+  console.log('attempting to create page...')
   page_dictionary = items[type_of_page];
-  list_of_items = page_dictionary.keys();
+  console.log('PD:', page_dictionary)
+  list_of_items = Object.keys(page_dictionary);
+  console.log('Item List:', list_of_items);
   for(let i = 0; i < list_of_items.length; i++) {
     var parent = document.createElement("div");
     pic = document.createElement("img");
-    pic.innerHTML = src="images/"+type_of_page+"/"+list_of_items[i]+".jpg";
-    par =  document.createElement("p");
+    pic.src = "images/"+type_of_page+"/"+list_of_items[i]+".jpg";
+    parent.appendChild(pic)
+    par = document.createElement("p");
     par.innerText = list_of_items[i];
+    parent.appendChild(par);
+    btn = document.createElement("button");
+    btn.innerHTML = page_dictionary[list_of_items[i]];
+    btn.addEventListener('click', () => setPrice(parseFloat(localStorage.getItem('price')) + page_dictionary[list_of_items[i]]))
+    parent.appendChild(btn);
 
+    itemlist.appendChild(parent);
     // butn =  document.createElement("button");
     // butn.innerHTML = "Price";
     // for each page_dictionary[list_of_items[i]], create an item for your div, and insert
   }
+}
+
+function setPrice(newPrice){
+  localStorage.setItem('price', newPrice)
+}
+
+function getPrice() {
+  return '$' + localStorage.getItem('price')
 }
