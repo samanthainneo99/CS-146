@@ -1,6 +1,7 @@
 var parent1 = document.createElement("div");
 para = document.createElement("p");
 para.innerText = "Your Total: "  +(localStorage.getItem('price'));
+console.log(localStorage.getItem('price'));
 para.addEventListener('click', () => setPrice(parseFloat(localStorage.getItem('price')) + page_dictionary[list_of_items[i]]));
 console.log(para);
 
@@ -47,8 +48,6 @@ function getpromoprice(f){
 function set_tax_price(newPrice){
   return newPrice = (newPrice * tax) + (newPrice);
 }
-.addEventListener('click', localStorage.)
-
 
 function setPrice(newPrice){
   localStorage.setItem('price', newPrice);
@@ -56,4 +55,8 @@ function setPrice(newPrice){
 
 function getPrice() {
   return '$' + localStorage.getItem('price');
+}
+
+function displayTotal() {
+  document.getElementById("mytotal").innerHTML = "" + getPrice();
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Checkout</title>
-  <script type="text/javascript" src="checkout.js"></script>
+  <script type="text/javascript" src="checkout.js" defer></script>
   <link rel="stylesheet" type="text/css" href="checkoutStyle.css" >
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 </head>
@@ -14,15 +14,16 @@
         <a href="newShop.html" class="headlinks">Shop</a>
         <a href="shopCoupon.html" class="headlinks">Coupons</a>
         <a href="shopRecipe.html" class="headlinks">Recipes</a>
-        <a href="shopAboutUs.html" class="headlinks">About</a>
-        <a href="shopContactUs.html" class="headlinks">Contact</a>
-        <a href="checkout.html"><img src="images/cart.png" id="cart"></img></a>
+        <a href="shopAboutUs.html" class="headlinks">About </a>
+        <a href="shopContactUs.html" class="headlinks">Contact </a>
+        <a href="checkout.html" ><img src="images/cart.png" id="cart"> </img></a>
       </nav>
   <div class="row">
   <div class="col-75">
     <div class="container">
       <h1>Your Total:</h1>
-      <button id="totalbutton">Click for your total </button>
+      <button id="totalbutton" onclick="displayTotal()">Click for your total </button>
+      <p id="mytotal"></p>
       <p>Select a Promo Code: </p>
       <select id="promo_code">
         <option value="5"> WELCOME</option>
@@ -44,7 +45,7 @@
             <div class="row">
               <div class="col-50">
                 <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NJ">
+                <input type="text" id="state" name="state" placeholder="NJF">
               </div>
               <div class="col-50">
                 <label for="zip">Zip</label>
@@ -88,7 +89,7 @@
           </div>
         </div>
       </form>
-      <a href="./newShop.html"><button class="button1"> Pay Now </button></a>
+      <a href="./newShop.html"><button class="button1" onclick="alert('THANK YOU FOR YOUR PURCHASE! YOUR FOOD IS OUR GOAL!')"> Pay Now </button></a>
     </div>
   </div>
 </body>
