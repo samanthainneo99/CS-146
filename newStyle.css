@@ -4,7 +4,7 @@ body {
 }
 
 #all_navs {
-  display: flex; 
+  display: flex;
   flex-direction: column;
 }
 #nav1 {
@@ -27,7 +27,6 @@ body {
 #nav2 a {
   padding-top: 20px;
   width: 150px
-
 }
 #content{
   width:100%;
@@ -58,7 +57,10 @@ body {
 }
 .picStyle{
   max-width: 200px;
+  min-width: 200px;
   max-height: 200px;
+  min-height: 200px;
+  justify-content: space-evenly;
 }
 #divStyle{
   display: flex;
